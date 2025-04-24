@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report Lost/Found Item</title>
+</head>
+<body>
+  <h1>Report an Item</h1>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="report.html">Report Item</a> |
+    <a href="search.html">Search Items</a> |
+    <a href="contact.html">Contact & Stories</a>
+  </nav>
+  <form>
+    <label>Item Name: <input type="text" required></label><br>
+    <label>Description: <textarea required></textarea></label><br>
+    <label>Date/Time: <input type="datetime-local" required></label><br>
+    <label>Last Known Location: <input type="text" required></label><br>
+    <label>Status: 
+      <select>
+        <option>Lost</option>
+        <option>Found</option>
+      </select>
+    </label><br>
+    <label>Category: 
+      <select>
+        <option>Phone</option>
+        <option>Wallet</option>
+        <option>Keys</option>
+        <option>Pet</option>
+      </select>
+    </label><br>
+    <label>Photo (optional): <input type="file" disabled></label><br><br>
+    <button type="submit">Submit Report</button>
+  </form>
+</body>
+</html>
